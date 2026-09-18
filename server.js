@@ -36,7 +36,7 @@ app.post('/v1/chat/completions', async (req, res) => {
       },
       data: req.body,
       responseType: req.body.stream ? 'stream' : 'json',
-      timeout: 300000
+      timeout: 1800000
     });
 
     if (req.body.stream) {
